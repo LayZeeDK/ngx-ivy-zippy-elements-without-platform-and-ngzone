@@ -16,7 +16,7 @@ import {
 
 class IvyComponentFactoryResolver extends ComponentFactoryResolver {
   resolveComponentFactory<T>(component: Type<T>): ComponentFactory<T> {
-    return new ɵRender3ComponentFactory(component[ɵNG_COMP_DEF]);
+    return new ɵRender3ComponentFactory((component as any)[ɵNG_COMP_DEF]);
   }
 }
 
