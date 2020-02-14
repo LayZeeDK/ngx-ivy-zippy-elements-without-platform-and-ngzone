@@ -20,7 +20,7 @@ import { CapitalizePipe } from './capitalize.pipe';
     </button>
 
     <div [hidden]="!isExpanded">
-      <slot></slot>
+      <ng-content></ng-content>
     </div>
   `,
 })
